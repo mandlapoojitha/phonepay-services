@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #34495e;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background: #34495e;
+            color: white;
+        }
+
+        tr:hover {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>📜 Transaction History</h1>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Service</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>2025-09-10</td>
+                <td>PayMoney</td>
+                <td>₹500</td>
+                <td>✅ Success</td>
+            </tr>
+            <tr>
+                <td>2025-09-12</td>
+                <td>Recharge</td>
+                <td>₹199</td>
+                <td>✅ Success</td>
+            </tr>
+            <tr>
+                <td>2025-09-13</td>
+                <td>Metro</td>
+                <td>₹100</td>
+                <td>⏳ Pending</td>
+            </tr>
+        </table>
+    </main>
+</body>
+
+</html>

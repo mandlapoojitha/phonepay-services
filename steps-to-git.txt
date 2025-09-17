@@ -1,0 +1,10 @@
+Create a folder , here phonepay-services
+initialize git : git init
+Inside folder , create required project files , here index.html
+git add .
+git commit -m"commit message"
+create a repo in github : here phonepay-services , If you want add readme.md and .gitignore
+add the origin of remote repo in github to local folder : git remote add origin <git repo url>
+first pull changes from remote repo : git pull origin main
+merge remote main into your local main : git pull origin main  --allow-unrelated-histories
+push local code to remote repo : git push -u origin main
