@@ -1,0 +1,13 @@
+version: "3"
+services:
+  nginx-service:
+    container_name: nginx-container
+    image: nginx
+    ports:
+      - "1111:80"
+
+  httpd-service:
+    container_name: httpd-container
+    image: httpd
+    ports:
+      - "2222:80"
