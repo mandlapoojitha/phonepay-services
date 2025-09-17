@@ -1,0 +1,52 @@
+version: "3"
+services:
+  paymoney:
+    container_name: paymoney-container
+    build: ./paymoney
+    ports:
+      - "1111:80"
+    volumes:
+      - paymoney-volume:/usr/share/nginx/html/
+    networks:
+      - paymoney
+
+  metro:
+    container_name: metro-container
+    build: ./metro
+    ports:
+      - "2222:80"
+    volumes:
+      - metro-volume:/usr/share/nginx/html/
+    networks:
+      - metro
+
+  recharge:
+    container_name: recharge-container
+    build: ./recharge
+    ports:
+      - "3333:80"
+    volumes:
+      - recharge-volume:/usr/share/nginx/html/
+    networks:
+      - recharge
+
+  history:
+    container_name: history-container
+    build: ./history
+    ports:
+      - "4444:80"
+volumes:
+  paymoney-volume:
+  metro-volume:
+  recharge-volume:
+  history-volume:
+
+networks:
+  paymoney:
+    driver: bridge
+  metro:
+    driver: bridge
+  recharge:
+    driver: bridge
+  history:
+    driver: bridge
