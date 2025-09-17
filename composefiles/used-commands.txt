@@ -1,0 +1,8 @@
+yum install docker
+yum install tree
+systemctl start docker
+docker-compose up -d
+docker inspect ps
+docker inspect "container name"
+docker exec -it container name bash
+ping ipaddressof container
